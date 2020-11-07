@@ -51,9 +51,10 @@ Response = statis line protocol version and success/error code, MIME-like msg wi
 
 I am going to focus on the simple situation where a user agent initiates the communication by send a request to an origin server via single connection.
 
->request chain ------------------------>
-       UA -------------------v------------------- O
-          <----------------------- response chain
+>request chain ------------------------> 
+UA -------------------v------------------- O 
+<----------------------- response chain 
+
 UA: user agent
 v: connection
 O: origin server
@@ -63,7 +64,4 @@ HTTP communication usually takes place over TCP/IP. With a default port "TCP 80"
 
 HTTP only presumes a reliable transport. Meaning that any protocol that provides such guarantees can be used
 
->In HTTP/1.0, most implementations used a new connection for each
-   request/response exchange. In HTTP/1.1, a connection may be used for
-   one or more request/response exchanges, although connections may be
-   closed for a variety of reasons (see section 8.1).
+>In HTTP/1.0, most implementations used a new connection for each request/response exchange. In HTTP/1.1, a connection may be used for one or more request/response exchanges,although connections may be closed for a variety of reasons (see section 8.1).
