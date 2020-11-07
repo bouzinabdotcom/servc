@@ -51,9 +51,9 @@ Response = statis line protocol version and success/error code, MIME-like msg wi
 
 I am going to focus on the simple situation where a user agent initiates the communication by send a request to an origin server via single connection.
 
->request chain ------------------------> 
-UA -------------------v------------------- O 
-<----------------------- response chain 
+>request chain ------------------------>  
+UA -------------------v------------------- O   
+<----------------------- response chain   
 
 UA: user agent
 v: connection
